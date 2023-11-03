@@ -1322,18 +1322,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7101410006555298447, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 969610086}
-    - targetCorrespondingSourceObject: {fileID: 7101410006555298447, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 969610085}
-    - targetCorrespondingSourceObject: {fileID: 7101410006555298447, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 969610087}
     - targetCorrespondingSourceObject: {fileID: 2233940613361922646, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
         type: 3}
       insertIndex: -1
@@ -1358,6 +1346,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 31153001}
+    - targetCorrespondingSourceObject: {fileID: 2233940613361922646, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 31153008}
   m_SourcePrefab: {fileID: 100100000, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c, type: 3}
 --- !u!65 &31152991 stripped
 BoxCollider:
@@ -1600,7 +1592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31152993}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1029778088, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
   m_Name: 
@@ -1618,14 +1610,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31152993}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _realtime: {fileID: 0}
+  _realtime: {fileID: 966256725}
   _sceneViewUUID: 
-  _viewUUID: 
+  _viewUUID: 041b6b65-bf23-49d9-8e15-21fba9443b67
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
   _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
@@ -1633,6 +1625,12 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 31153001}
+  - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
+    component: {fileID: 31153008}
   _childViews: []
 --- !u!114 &31153003
 MonoBehaviour:
@@ -1646,9 +1644,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d590f9288dbeda47bcaa3cd2234d306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  realtimeView: {fileID: 0}
-  realtimeTransform: {fileID: 0}
-  xRGrabInteractable: {fileID: 0}
+  realtimeView: {fileID: 31153002}
+  realtimeTransform: {fileID: 31153001}
+  xRGrabInteractable: {fileID: 31152995}
+--- !u!114 &31153008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31152993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f89f7754532324d9d4279560f9e357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  realtimeView: {fileID: 31153002}
+  realtimeTransform: {fileID: 31153001}
+  xRGrabInteractable: {fileID: 31152995}
+  grabEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &33726501
 GameObject:
   m_ObjectHideFlags: 0
@@ -22780,7 +22796,7 @@ MonoBehaviour:
   m_Camera: {fileID: 929996840}
   m_OriginBaseGameObject: {fileID: 739317776}
   m_CameraFloorOffsetObject: {fileID: 1884398642}
-  m_RequestedTrackingOriginMode: 2
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.67
 --- !u!114 &739317780
 MonoBehaviour:
@@ -30655,70 +30671,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251fbd0380ea83440af7758ab5b258b8, type: 3}
---- !u!1 &969610083 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7101410006555298447, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
-    type: 3}
-  m_PrefabInstance: {fileID: 31152990}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &969610085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1029778088, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolate: 1
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
---- !u!114 &969610086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _realtime: {fileID: 966256725}
-  _sceneViewUUID: 
-  _viewUUID: c1747288-cff6-45b9-9e9e-b99c4fd9f86c
-  _sceneViewPreventOwnershipTakeover: 0
-  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
-  _sceneViewDestroyWhenLastClientLeaves: 1
-  _components:
-  - componentID: 1
-    component: {fileID: 969610085}
-  _childViews:
-  - componentID: 1
-    component: {fileID: 31153002}
---- !u!114 &969610087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d590f9288dbeda47bcaa3cd2234d306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  realtimeView: {fileID: 0}
-  realtimeTransform: {fileID: 0}
-  xRGrabInteractable: {fileID: 0}
 --- !u!1001 &971021221
 PrefabInstance:
   m_ObjectHideFlags: 0
