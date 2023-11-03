@@ -1337,10 +1337,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2233940613361922646, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 31153003}
-    - targetCorrespondingSourceObject: {fileID: 2233940613361922646, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 31153002}
     - targetCorrespondingSourceObject: {fileID: 2233940613361922646, guid: e5d385c1c42bf8f4bb6cd34d7de2bf2c,
         type: 3}
@@ -1632,21 +1628,6 @@ MonoBehaviour:
   - componentID: 4
     component: {fileID: 31153008}
   _childViews: []
---- !u!114 &31153003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31152993}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d590f9288dbeda47bcaa3cd2234d306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  realtimeView: {fileID: 31153002}
-  realtimeTransform: {fileID: 31153001}
-  xRGrabInteractable: {fileID: 31152995}
 --- !u!114 &31153008
 MonoBehaviour:
   m_ObjectHideFlags: 0
