@@ -19,6 +19,7 @@ public class RequestOwnershipSelect : RealtimeComponent<GrabSync>
         realtimeView.RequestOwnership();
         realtimeTransform.RequestOwnership();
         model.grabNumber++; //Trigger a network grab
+        Debug.Log("select");
     }
 
     private void OnDisable() => xRSimpleInteractable.selectEntered.RemoveListener(RequestObjectOwnership);

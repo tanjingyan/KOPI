@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 114879240156072798}
   - component: {fileID: 114800176784454794}
   - component: {fileID: 114272718057082298}
-  - component: {fileID: 1424066905774971184}
+  - component: {fileID: 5490054470845512791}
   m_Layer: 0
   m_Name: VR Player
   m_TagString: Untagged
@@ -337,7 +337,7 @@ MonoBehaviour:
   - componentID: 2
     component: {fileID: 114272718057082298}
   - componentID: 3
-    component: {fileID: 1424066905774971184}
+    component: {fileID: 0}
   _childViews:
   - componentID: 1
     component: {fileID: 114098979720017432}
@@ -378,23 +378,19 @@ MonoBehaviour:
   _syncScale: 1
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
---- !u!114 &1424066905774971184
+--- !u!114 &5490054470845512791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435502846325602}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b5194c4e056a74f9c997cb830fc7bb, type: 3}
+  m_Script: {fileID: 11500000, guid: f58784a95c84f9d4b83234c97ba72f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderers:
-  - {fileID: 23123477684580134}
-  - {fileID: 23915046626809702}
-  - {fileID: 23206906674170422}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  realtimeView: {fileID: 114879240156072798}
 --- !u!1 &1573471737031190
 GameObject:
   m_ObjectHideFlags: 0

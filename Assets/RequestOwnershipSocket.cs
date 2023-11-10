@@ -19,12 +19,14 @@ public class RequestOwnershipSocket : RealtimeComponent<GrabSync>
         realtimeView.RequestOwnership();
         realtimeTransform.RequestOwnership();
         model.grabNumber++; //Trigger a network grab
+        Debug.Log("select");
     }
 
     private void OnDisable() => xRSocketInteractor.selectEntered.RemoveListener(RequestObjectOwnership);
 
     private void NetworkGrab(GrabSync model, int value) {
         grabEvent.Invoke();
+        Debug.Log("unselect");
     }
 
     protected override void OnRealtimeModelReplaced(GrabSync previousModel, GrabSync currentModel) {
