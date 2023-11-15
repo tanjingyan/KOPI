@@ -2,6 +2,7 @@ using System;
 using Normal.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 namespace Name
 {
@@ -10,6 +11,7 @@ namespace Name
         private RealtimeAvatarManager _realtimeAvatarManager;
         private RealtimeAvatar _realtimeAvatar;
         private string _localPlayerName;
+
 
         private void Awake() => _realtimeAvatarManager = GetComponent<RealtimeAvatarManager>();
 
@@ -24,10 +26,28 @@ namespace Name
         }
 
         public void SaveLocalPlayerName(Text nameField)
-        {
-            _localPlayerName = nameField.text;
-            _realtimeAvatar.GetComponentInChildren<NameSync>().SetText(_localPlayerName);
-            nameField.text = "";
-        }
+    {
+        _localPlayerName = nameField.text;
+        _realtimeAvatar.GetComponentInChildren<NameSync>().SetText(_localPlayerName);
+        nameField.color = Color.red;
+        nameField.text = "Name has been changed to " + _localPlayerName + " successfully!!";
+
+        StartCoroutine(DisplayMessageForSeconds(nameField, 3f));
+    }
+
+    private IEnumerator DisplayMessageForSeconds(Text messageText, float seconds)
+    {
+        // Wait for the specified duration
+        yield return new WaitForSeconds(seconds);
+
+        // After waiting, clear the text or set it to an empty string
+        messageText.text = "";
+    }
+
+        
+
+        
+
+
     }
 }
